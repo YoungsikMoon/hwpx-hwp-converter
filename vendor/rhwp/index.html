@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HWPX/HWP 미리보기</title>
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <main class="split">
+    <section class="pane">
+      <header><strong id="left-name">원본 HWPX</strong><span id="left-status">준비 중</span></header>
+      <nav>
+        <button id="left-prev" title="이전 페이지">◀</button><span id="left-page">- / -</span>
+        <button id="left-next" title="다음 페이지">▶</button><i></i>
+        <button id="left-zoom-out" title="축소">−</button><span id="left-zoom">100%</span>
+        <button id="left-zoom-in" title="확대">＋</button>
+      </nav>
+      <div id="left-view" class="viewport"></div>
+    </section>
+    <section class="pane">
+      <header><strong id="right-name">변환된 HWP</strong><span id="right-status">준비 중</span></header>
+      <nav>
+        <button id="right-prev" title="이전 페이지">◀</button><span id="right-page">- / -</span>
+        <button id="right-next" title="다음 페이지">▶</button><i></i>
+        <button id="right-zoom-out" title="축소">−</button><span id="right-zoom">100%</span>
+        <button id="right-zoom-in" title="확대">＋</button>
+      </nav>
+      <div id="right-view" class="viewport"></div>
+    </section>
+  </main>
+  <script type="module" src="./preview.js"></script>
+</body>
+</html>

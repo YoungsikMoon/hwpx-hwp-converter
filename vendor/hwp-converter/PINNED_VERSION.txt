@@ -1,0 +1,4 @@
+upstream=https://github.com/vsdn/hwpConverter
+commit=9af63ea5e24f4761351559591a1b35dbdf3c78b3
+built_with=Eclipse Temurin JDK 21.0.12+8
+target=Java 8 bytecode

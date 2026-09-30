@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+
+# Build and temporary files
+build/
+.build-tools/
+test-output/
+
+# Release executables are attached to GitHub Releases, not Git commits
+dist/
+
+# Editors and operating system
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
