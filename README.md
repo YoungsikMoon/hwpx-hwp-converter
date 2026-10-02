@@ -7,6 +7,21 @@
 - 저작권: Copyright © 2026 문영식
 - 프로그램 자체 라이선스: MIT
 
+[Windows 실행 파일 다운로드](https://github.com/YoungsikMoon/hwpx-hwp-converter/releases/latest)
+
+## 해결하려는 문제와 구현 범위
+
+문서를 받은 사람이 구형 한컴오피스를 사용한다는 이유로 파일을 열지 못하는 상황을 줄이기 위한 개인 프로젝트입니다. 변환 엔진을 처음부터 작성하는 대신 기존 오픈소스 엔진을 Windows 앱으로 연결하고, 파일 선택부터 결과 확인까지 한 흐름으로 구성했습니다.
+
+Python·PySide6 기반 UI에 입력 검증, 변환 실행, 결과 검증, 원본과 결과 비교를 연결했습니다. 변환 성공 표시만으로 문서 품질을 보장하기 어려워 경고와 좌우 미리보기를 함께 제공합니다.
+
+| 확인할 내용 | 코드 |
+| --- | --- |
+| 변환 작업 흐름과 엔진 연결 | [orchestrator.py](src/hwpx_hwp_app/orchestrator.py), [engines.py](src/hwpx_hwp_app/engines.py) |
+| 입력·결과 문서 검증 | [input_validator.py](src/hwpx_hwp_app/input_validator.py), [hwp_validator.py](src/hwpx_hwp_app/hwp_validator.py) |
+| 문서 비교와 미리보기 | [comparator.py](src/hwpx_hwp_app/comparator.py), [preview_window.py](src/hwpx_hwp_app/preview_window.py) |
+| 회귀 검증 | [tests](tests) |
+
 ## 사용법
 
 1. `HWPX-HWP-변환기-1.0.0.exe`를 실행합니다.
